@@ -1,3 +1,5 @@
-# Controller Documentation
+# Main Project Documentation
 
-For more information on the overall project, see the [Main Project Documentation](../README.md).
+## Table of Contents
+- [Controller Documentation](docs/README.md#controller-layer-documentation)
+- [Services Documentation](docs/README.md#services-layer-documentation)
