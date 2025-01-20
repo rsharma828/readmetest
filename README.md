@@ -1,1 +1,20 @@
-# readmetest
+# Project Documentation
+
+## Table of Contents
+- [Overview](#overview)
+- [Controller Layer Documentation](#controller-layer-documentation)
+- [Services Layer Documentation](#services-layer-documentation)
+- [Integration Between Controller and Services](#integration-between-controller-and-services)
+
+## Overview
+This project integrates user management, authentication, and token verification using **WorkOS**.
+aouhvboisd vsi vsidvb sivb sidvks divsb dvis vsj vsjdv sduvjb svb ilabilbv ui seuv siv vbaui vuhv aufv jvhavia vaiv aiv viabv irv vibvuaj v av vav av av vaj vajv vj vajv ajv Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ex a metus sollicitudin, id auctor neque luctus. Integer eget justo sapien. Aenean vel laoreet sapien. Sed non ligula et sem varius faucibus. Ut tempor feugiat libero, non dictum neque vulputate et. Donec facilisis vulputate nunc, eget hendrerit elit cursus in. Nunc ac mollis justo, non faucibus leo. Nam efficitur interdum viverra. Aliquam erat volutpat. Vivamus cursus ex vel nulla tincidunt ultricies. Phasellus gravida libero orci, a suscipit nulla pretium a. Integer suscipit vestibulum lorem, sed elementum urna egestas nec. Nulla facilisi. Nam malesuada turpis vitae velit vulputate, a tincidunt risus interdum. Etiam laoreet ex a magna fringilla volutpat.
+
+## Controller Layer Documentation
+The **Controller** layer handles incoming requests and validates data. It then calls the relevant methods from the **Services** layer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ex a metus sollicitudin, id auctor neque luctus. Integer eget justo sapien. Aenean vel laoreet sapien. Sed non ligula et sem varius faucibus. Ut tempor feugiat libero, non dictum neque vulputate et. Donec facilisis vulputate nunc, eget hendrerit elit cursus in. Nunc ac mollis justo, non faucibus leo. Nam efficitur interdum viverra. Aliquam erat volutpat. Vivamus cursus ex vel nulla tincidunt ultricies. Phasellus gravida libero orci, a suscipit nulla pretium a. Integer suscipit vestibulum lorem, sed elementum urna egestas nec. Nulla facilisi. Nam malesuada turpis vitae velit vulputate, a tincidunt risus interdum. Etiam laoreet ex a magna fringilla volutpat.
+
+## Services Layer Documentation
+The **Services** layer contains the business logic and interacts with **WorkOS** for user and token management.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ex a metus sollicitudin, id auctor neque luctus. Integer eget justo sapien. Aenean vel laoreet sapien. Sed non ligula et sem varius faucibus. Ut tempor feugiat libero, non dictum neque vulputate et. Donec facilisis vulputate nunc, eget hendrerit elit cursus in. Nunc ac mollis justo, non faucibus leo. Nam efficitur interdum viverra. Aliquam erat volutpat. Vivamus cursus ex vel nulla tincidunt ultricies. Phasellus gravida libero orci, a suscipit nulla pretium a. Integer suscipit vestibulum lorem, sed elementum urna egestas nec. Nulla facilisi. Nam malesuada turpis vitae velit vulputate, a tincidunt risus interdum. Etiam laoreet ex a magna fringilla volutpat.
+
+## Integration Between Controller and Services
+The **Controller** layer interacts with the **Services** layer to perform operations such as authentication and user management.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ex a metus sollicitudin, id auctor neque luctus. Integer eget justo sapien. Aenean vel laoreet sapien. Sed non ligula et sem varius faucibus. Ut tempor feugiat libero, non dictum neque vulputate et. Donec facilisis vulputate nunc, eget hendrerit elit cursus in. Nunc ac mollis justo, non faucibus leo. Nam efficitur interdum viverra. Aliquam erat volutpat. Vivamus cursus ex vel nulla tincidunt ultricies. Phasellus gravida libero orci, a suscipit nulla pretium a. Integer suscipit vestibulum lorem, sed elementum urna egestas nec. Nulla facilisi. Nam malesuada turpis vitae velit vulputate, a tincidunt risus interdum. Etiam laoreet ex a magna fringilla volutpat.
