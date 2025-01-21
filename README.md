@@ -139,7 +139,7 @@ kalehq-retention-stack-backend/
 | Files          | Functionality |
 |----------------|---------------|
 | [.github](#github)        | Contains configuration files for GitHub workflows, actions, and settings. |
-| [Controllers](Controllers-Documentation)    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
+| [Controllers](#Controllers-Documentation)    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
 | Services       | Contain the core business logic, data processing, and interactions with databases or external APIs. |
 | Models         | Define the structure and schema of the data, often used to interact with the database (e.g., Mongoose models for MongoDB). |
 | Middlewares    | Functions that process requests before reaching the controller, handling tasks like authentication, validation, or logging. |
