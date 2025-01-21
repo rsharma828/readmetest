@@ -1,7 +1,7 @@
 This is the main Repo of primary backend for main flow works 
 \
 ** File Structure and brief detail of file **
-
+[hello](#hello)
 ```
 kalehq-retention-stack-backend/
 ├── .github/
@@ -130,7 +130,58 @@ kalehq-retention-stack-backend/
 │   └── index.js
 ```
 
+#   hello
 
 
 
+# Project File Structure and Functionality
+
+| Files          | Functionality |
+|----------------|---------------|
+| [github](#github)        | Contains configuration files for GitHub workflows, actions, and settings. |
+| Controllers    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
+| Services       | Contain the core business logic, data processing, and interactions with databases or external APIs. |
+| Models         | Define the structure and schema of the data, often used to interact with the database (e.g., Mongoose models for MongoDB). |
+| Middlewares    | Functions that process requests before reaching the controller, handling tasks like authentication, validation, or logging. |
+| Routes         | Define the URL paths and HTTP methods, linking them to corresponding controller actions. |
+| Utils          | Contain utility functions and helper methods used across the project (e.g., logging, email sending, etc.). |
+| Config         | Store environment variables, settings, or constants used throughout the application for configuration purposes. |
+
+##  github
+#   .github Folder Structure and Functionality
+
+| Files                | Functionality |
+|----------------------|---------------|
+| workflows/            | Contains YAML files for GitHub Actions workflows, automating tasks such as testing, deployments, or CI/CD processes. |
+| ISSUE_TEMPLATE.md     | Provides a template for users to follow when submitting issues on GitHub repositories. |
+| PULL_REQUEST_TEMPLATE.md | Provides a template for users to follow when submitting pull requests, ensuring necessary details are included. |
+| config.yml            | Stores configuration settings for GitHub Actions or other automation tools integrated with the GitHub repository. |
+
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [GitHub Folder Structure](#github-folder-structure)
+
+# Introduction
+
+This is the introduction section.kansv avoabk viajkb vaisk vaikv aa
+abvjifbviak vaihkv aiv aivav
+vhajkv avhik avj av
+avib virkv iaevbearva
+rvarivrvbrv
+rr
+r
+r
+
+r
+r
+r
+r
+
+r
+
+# GitHub Folder Structure
+
+Here we explain the structure of the GitHub folder.
 
