@@ -1,7 +1,7 @@
 This is the main Repo of primary backend for main flow works 
 \
 ** File Structure and brief detail of file **
-[hello](#hello)
+
 ```
 kalehq-retention-stack-backend/
 ├── .github/
@@ -130,7 +130,6 @@ kalehq-retention-stack-backend/
 │   └── index.js
 ```
 
-#   hello
 
 
 
@@ -162,42 +161,42 @@ kalehq-retention-stack-backend/
 | Controller | Functionality |
 |------------|--------------|
 | **Payment & Subscription Controllers** ||
-| Chargebee.js | - Handles integration with Chargebee subscription billing platform<br>- Manages subscription lifecycle events<br>- Processes billing-related operations |
-| Stripe.js | - Manages payment processing through Stripe gateway<br>- Handles payment method storage and updates<br>- Processes refunds and payment disputes |
-| Recurly.js | - Manages subscription billing through Recurly<br>- Handles subscription plan changes and upgrades<br>- Processes billing events and notifications |
+| [Chargebee.js](/Controllers&Services_docs/Chargebee.md) | - Handles integration with Chargebee subscription billing platform<br>- Manages subscription lifecycle events<br>- Processes billing-related operations |
+| [Stripe.js](/Controllers&Services_docs/Stripe.md) | - Manages payment processing through Stripe gateway<br>- Handles payment method storage and updates<br>- Processes refunds and payment disputes |
+| [Recurly.js](/Controllers&Services_docs/Recurly.md) | - Manages subscription billing through Recurly<br>- Handles subscription plan changes and upgrades<br>- Processes billing events and notifications |
 | **User Management Controllers** ||
-| UserProfiles.js | - Manages user profile data and updates<br>- Handles user preferences and settings<br>- Controls profile visibility and access |
-| UserSession.js | - Manages user authentication and sessions<br>- Handles login and logout operations<br>- Maintains session state and security |
-| UserEvents.js | - Tracks user interactions and activities<br>- Manages event logging and processing<br>- Provides user activity analytics |
+| [UserProfiles.js](/Controllers&Services_docs/UserProfiles.md) | - Manages user profile data and updates<br>- Handles user preferences and settings<br>- Controls profile visibility and access |
+| [UserSession.js](/Controllers&Services_docs/UserSession.md) | - Manages user authentication and sessions<br>- Handles login and logout operations<br>- Maintains session state and security |
+| [UserEvents.js](/Controllers&Services_docs/UserEvents.md) | - Tracks user interactions and activities<br>- Manages event logging and processing<br>- Provides user activity analytics |
 | **Customer Management Controllers** ||
-| CustomerData.js | - Handles customer data management<br>- Processes customer information updates<br>- Manages customer data access and security |
-| Customers.js | - Manages core customer operations<br>- Handles customer creation and updates<br>- Controls customer relationship management |
+| [CustomerData.js](/Controllers&Services_docs/CustomerData.md) | - Handles customer data management<br>- Processes customer information updates<br>- Manages customer data access and security |
+| [Customers.js](/Controllers&Services_docs/Customers.md) | - Manages core customer operations<br>- Handles customer creation and updates<br>- Controls customer relationship management |
 | **Support Integration Controllers** ||
-| Zendesk.js | - Manages Zendesk support platform integration<br>- Handles ticket creation and updates<br>- Synchronizes support data between systems |
-| Freshdesk.js | - Controls Freshdesk support system integration<br>- Manages support ticket lifecycle<br>- Handles customer support communications |
-| Slack.js | - Manages Slack messaging integration<br>- Handles notification delivery through Slack<br>- Controls message formatting and delivery |
+| [Zendesk.js](/Controllers&Services_docs/Zendesk.md) | - Manages Zendesk support platform integration<br>- Handles ticket creation and updates<br>- Synchronizes support data between systems |
+| [Freshdesk.js](/Controllers&Services_docs/Freshdesk.md) | - Controls Freshdesk support system integration<br>- Manages support ticket lifecycle<br>- Handles customer support communications |
+| [Slack.js](/Controllers&Services_docs/Slack.md) | - Manages Slack messaging integration<br>- Handles notification delivery through Slack<br>- Controls message formatting and delivery |
 | **Card and Template Controllers** ||
-| Cards.js | - Manages card creation and updates<br>- Handles card data organization<br>- Controls card access and permissions |
-| CardElements.js | - Manages reusable card components<br>- Handles card element rendering<br>- Controls element behavior and interactions |
-| Template.js | - Manages template creation and storage<br>- Handles template versioning<br>- Controls template access and usage |
-| TemplateViewer.js | - Provides template viewing functionality<br>- Manages template display options<br>- Handles template rendering and preview |
+| [Cards.js](/Controllers&Services_docs/Cards.md) | - Manages card creation and updates<br>- Handles card data organization<br>- Controls card access and permissions |
+| [CardElements.js](/Controllers&Services_docs/) | - Manages reusable card components<br>- Handles card element rendering<br>- Controls element behavior and interactions |
+| [Template.js](/Controllers&Services_docs/Template.md) | - Manages template creation and storage<br>- Handles template versioning<br>- Controls template access and usage |
+| [TemplateViewer.js](/Controllers&Services_docs/TemplateViewer.md) | - Provides template viewing functionality<br>- Manages template display options<br>- Handles template rendering and preview |
 | **Workflow and Process Controllers** ||
-| Workflow.js | - Manages workflow definitions and logic<br>- Handles workflow execution and state<br>- Controls workflow transitions and rules |
-| WorkflowViewer.js | - Provides workflow visualization<br>- Manages workflow state display<br>- Handles workflow interaction interface |
-| Worker.js | - Manages background processing tasks<br>- Handles asynchronous operations<br>- Controls job queuing and execution |
+| [Workflow.js](/Controllers&Services_docs/Workflow.md) | - Manages workflow definitions and logic<br>- Handles workflow execution and state<br>- Controls workflow transitions and rules |
+| [WorkflowViewer.js](/Controllers&Services_docs/WorkflowViewer.md) | - Provides workflow visualization<br>- Manages workflow state display<br>- Handles workflow interaction interface |
+| [Worker.js](/Controllers&Services_docs/Worker.md) | - Manages background processing tasks<br>- Handles asynchronous operations<br>- Controls job queuing and execution |
 | **Analytics and Data Controllers** ||
-| Analytics.js | - Manages analytics data collection<br>- Handles reporting and metrics<br>- Provides data visualization support |
-| ProductUsageData.js | - Tracks product usage metrics<br>- Manages usage data collection<br>- Provides usage analysis and reporting |
+| [Analytics.js](/Controllers&Services_docs/Analytics.md) | - Manages analytics data collection<br>- Handles reporting and metrics<br>- Provides data visualization support |
+| [ProductUsageData.js](/Controllers&Services_docs/ProductUsageData.md) | - Tracks product usage metrics<br>- Manages usage data collection<br>- Provides usage analysis and reporting |
 | **System Configuration Controllers** ||
-| GlobalConfig.js | - Manages system-wide settings<br>- Handles configuration updates<br>- Controls feature flags and toggles |
-| WorkOS.js | - Manages WorkOS integration<br>- Handles identity and access control<br>- Manages single sign-on operations |
+| [GlobalConfig.js](/Controllers&Services_docs/GlobalConfig.md) | - Manages system-wide settings<br>- Handles configuration updates<br>- Controls feature flags and toggles |
+| [WorkOS.js](/Controllers&Services_docs/WorkOS.md) | - Manages WorkOS integration<br>- Handles identity and access control<br>- Manages single sign-on operations |
 | **Miscellaneous Controllers** ||
-| Notification.js | - Manages system notifications<br>- Handles notification delivery<br>- Controls notification preferences |
-| Questionnaire.js | - Manages survey and questionnaire data<br>- Handles response collection<br>- Controls questionnaire flow |
-| OnboardingDetails.js | - Manages user onboarding process<br>- Handles onboarding step tracking<br>- Controls onboarding flow and progress |
-| Media.js | - Handles media file operations<br>- Manages file uploads and storage<br>- Controls media access and processing |
-| Webhooks.js | - Manages webhook endpoints<br>- Handles webhook event processing<br>- Controls webhook security and validation |
-| Challenges.js | - Manages system challenges<br>- Handles challenge progression<br>- Controls challenge rewards and completion |
+| [Notification.js](/Controllers&Services_docs/Notification.md) | - Manages system notifications<br>- Handles notification delivery<br>- Controls notification preferences |
+| [Questionnaire.js](/Controllers&Services_docs/Questionnaire.md) | - Manages survey and questionnaire data<br>- Handles response collection<br>- Controls questionnaire flow |
+| [OnboardingDetails.js](/Controllers&Services_docs/OnboardingDetails.md) | - Manages user onboarding process<br>- Handles onboarding step tracking<br>- Controls onboarding flow and progress |
+| [Media.js](/Controllers&Services_docs/Media.md) | - Handles media file operations<br>- Manages file uploads and storage<br>- Controls media access and processing |
+| [Webhooks.js](/Controllers&Services_docs/Webhooks.md) | - Manages webhook endpoints<br>- Handles webhook event processing<br>- Controls webhook security and validation |
+| [Challenges.js](/Controllers&Services_docs/Challenges.md) | - Manages system challenges<br>- Handles challenge progression<br>- Controls challenge rewards and completion |
 
 
 
@@ -253,18 +252,18 @@ kalehq-retention-stack-backend/
 | Model | Functionality |
 |-------|---------------|
 | **Core Models** ||
-| Cards.js | - Defines schema for cards in the system<br>- Manages card-specific operations<br>- Provides validation for card data |
-| UserProfiles.js | - Handles user profile schema and logic<br>- Manages CRUD operations for user data<br>- Validates user-specific attributes |
-| Notification.js | - Manages schema for notifications<br>- Handles notification data processing<br>- Provides delivery tracking for notifications |
-| PersonaCategory.js | - Defines schema for categorizing personas<br>- Provides structure for persona-related features<br>- Manages hierarchy of persona categories |
-| OnboardingDetails.js | - Handles onboarding-related data schema<br>- Manages onboarding workflows and logic<br>- Ensures data consistency for new users |
+| [Cards.js](/models_docs/Cards.md) | - Defines schema for cards in the system<br>- Manages card-specific operations<br>- Provides validation for card data |
+| [UserProfiles.js](/models_docs/UserProfiles.md) | - Handles user profile schema and logic<br>- Manages CRUD operations for user data<br>- Validates user-specific attributes |
+| [Notification.js](/models_docs/Notification.md) | - Manages schema for notifications<br>- Handles notification data processing<br>- Provides delivery tracking for notifications |
+| [PersonaCategory.js](/models_docs/PersonaCategory.md) | - Defines schema for categorizing personas<br>- Provides structure for persona-related features<br>- Manages hierarchy of persona categories |
+| [OnboardingDetails.js](/models_docs/OnboardingDetails.md) | - Handles onboarding-related data schema<br>- Manages onboarding workflows and logic<br>- Ensures data consistency for new users |
 | **Auxiliary Models** ||
-| Media.js | - Manages schema for media files<br>- Handles file metadata and processing<br>- Integrates with storage services |
-| GlobalConfig.js | - Defines schema for application-wide configuration<br>- Manages settings for different environments<br>- Supports dynamic updates to configurations |
-| Challenges.js | - Defines schema for system challenges<br>- Manages gamification and task features<br>- Tracks user progress and completion |
-| RequestLock.js | - Manages schema for locking mechanisms<br>- Prevents concurrent modification of resources<br>- Ensures request integrity |
-| Template.js | - Defines schema for templates<br>- Manages reusable design elements<br>- Supports template creation and updates |
-| PersonaConfig.js | - Handles persona configuration schema<br>- Manages settings for personalization<br>- Supports customization for personas |
+| [Media.js](/models_docs/Media.md) | - Manages schema for media files<br>- Handles file metadata and processing<br>- Integrates with storage services |
+| [GlobalConfig.js](/models_docs/GlobalConfig.md) | - Defines schema for application-wide configuration<br>- Manages settings for different environments<br>- Supports dynamic updates to configurations |
+| [Challenges.js](/models_docs/Challenges.md) | - Defines schema for system challenges<br>- Manages gamification and task features<br>- Tracks user progress and completion |
+| [RequestLock.js](/models_docs/RequestLock.md) | - Manages schema for locking mechanisms<br>- Prevents concurrent modification of resources<br>- Ensures request integrity |
+| [Template.js](/models_docs/Template.md) | - Defines schema for templates<br>- Manages reusable design elements<br>- Supports template creation and updates |
+| [PersonaConfig.js](/models_docs/PersonaConfig.md) | - Handles persona configuration schema<br>- Manages settings for personalization<br>- Supports customization for personas |
 
 
 # Middlewares Documentation
