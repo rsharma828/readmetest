@@ -138,8 +138,8 @@ kalehq-retention-stack-backend/
 
 | Files          | Functionality |
 |----------------|---------------|
-| [github](#github)        | Contains configuration files for GitHub workflows, actions, and settings. |
-| Controllers    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
+| [.github](#github)        | Contains configuration files for GitHub workflows, actions, and settings. |
+| [Controllers](Controllers-Documentation)    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
 | Services       | Contain the core business logic, data processing, and interactions with databases or external APIs. |
 | Models         | Define the structure and schema of the data, often used to interact with the database (e.g., Mongoose models for MongoDB). |
 | Middlewares    | Functions that process requests before reaching the controller, handling tasks like authentication, validation, or logging. |
@@ -147,7 +147,6 @@ kalehq-retention-stack-backend/
 | Utils          | Contain utility functions and helper methods used across the project (e.g., logging, email sending, etc.). |
 | Config         | Store environment variables, settings, or constants used throughout the application for configuration purposes. |
 
-##  github
 #   .github Folder Structure and Functionality
 
 | Files                | Functionality |
@@ -158,30 +157,44 @@ kalehq-retention-stack-backend/
 | config.yml            | Stores configuration settings for GitHub Actions or other automation tools integrated with the GitHub repository. |
 
 
-# Table of Contents
+# Controllers Documentation
 
-- [Introduction](#introduction)
-- [GitHub Folder Structure](#github-folder-structure)
-
-# Introduction
-
-This is the introduction section.kansv avoabk viajkb vaisk vaikv aa
-abvjifbviak vaihkv aiv aivav
-vhajkv avhik avj av
-avib virkv iaevbearva
-rvarivrvbrv
-rr
-r
-r
-
-r
-r
-r
-r
-
-r
-
-# GitHub Folder Structure
-
-Here we explain the structure of the GitHub folder.
-
+| Controller | Functionality |
+|------------|--------------|
+| **Payment & Subscription Controllers** ||
+| Chargebee.js | - Handles integration with Chargebee subscription billing platform<br>- Manages subscription lifecycle events<br>- Processes billing-related operations |
+| Stripe.js | - Manages payment processing through Stripe gateway<br>- Handles payment method storage and updates<br>- Processes refunds and payment disputes |
+| Recurly.js | - Manages subscription billing through Recurly<br>- Handles subscription plan changes and upgrades<br>- Processes billing events and notifications |
+| **User Management Controllers** ||
+| UserProfiles.js | - Manages user profile data and updates<br>- Handles user preferences and settings<br>- Controls profile visibility and access |
+| UserSession.js | - Manages user authentication and sessions<br>- Handles login and logout operations<br>- Maintains session state and security |
+| UserEvents.js | - Tracks user interactions and activities<br>- Manages event logging and processing<br>- Provides user activity analytics |
+| **Customer Management Controllers** ||
+| CustomerData.js | - Handles customer data management<br>- Processes customer information updates<br>- Manages customer data access and security |
+| Customers.js | - Manages core customer operations<br>- Handles customer creation and updates<br>- Controls customer relationship management |
+| **Support Integration Controllers** ||
+| Zendesk.js | - Manages Zendesk support platform integration<br>- Handles ticket creation and updates<br>- Synchronizes support data between systems |
+| Freshdesk.js | - Controls Freshdesk support system integration<br>- Manages support ticket lifecycle<br>- Handles customer support communications |
+| Slack.js | - Manages Slack messaging integration<br>- Handles notification delivery through Slack<br>- Controls message formatting and delivery |
+| **Card and Template Controllers** ||
+| Cards.js | - Manages card creation and updates<br>- Handles card data organization<br>- Controls card access and permissions |
+| CardElements.js | - Manages reusable card components<br>- Handles card element rendering<br>- Controls element behavior and interactions |
+| Template.js | - Manages template creation and storage<br>- Handles template versioning<br>- Controls template access and usage |
+| TemplateViewer.js | - Provides template viewing functionality<br>- Manages template display options<br>- Handles template rendering and preview |
+| **Workflow and Process Controllers** ||
+| Workflow.js | - Manages workflow definitions and logic<br>- Handles workflow execution and state<br>- Controls workflow transitions and rules |
+| WorkflowViewer.js | - Provides workflow visualization<br>- Manages workflow state display<br>- Handles workflow interaction interface |
+| Worker.js | - Manages background processing tasks<br>- Handles asynchronous operations<br>- Controls job queuing and execution |
+| **Analytics and Data Controllers** ||
+| Analytics.js | - Manages analytics data collection<br>- Handles reporting and metrics<br>- Provides data visualization support |
+| ProductUsageData.js | - Tracks product usage metrics<br>- Manages usage data collection<br>- Provides usage analysis and reporting |
+| **System Configuration Controllers** ||
+| GlobalConfig.js | - Manages system-wide settings<br>- Handles configuration updates<br>- Controls feature flags and toggles |
+| WorkOS.js | - Manages WorkOS integration<br>- Handles identity and access control<br>- Manages single sign-on operations |
+| **Miscellaneous Controllers** ||
+| Notification.js | - Manages system notifications<br>- Handles notification delivery<br>- Controls notification preferences |
+| Questionnaire.js | - Manages survey and questionnaire data<br>- Handles response collection<br>- Controls questionnaire flow |
+| OnboardingDetails.js | - Manages user onboarding process<br>- Handles onboarding step tracking<br>- Controls onboarding flow and progress |
+| Media.js | - Handles media file operations<br>- Manages file uploads and storage<br>- Controls media access and processing |
+| Webhooks.js | - Manages webhook endpoints<br>- Handles webhook event processing<br>- Controls webhook security and validation |
+| Challenges.js | - Manages system challenges<br>- Handles challenge progression<br>- Controls challenge rewards and completion |
