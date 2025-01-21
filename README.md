@@ -11,10 +11,10 @@ kalehq-retention-stack-backend/
 │
 ├── config/
 │   ├── email_templates/
-│   │   ├── Email_Notification_RA.html ( html structure for Email notification for call-to-action )
-│   │   ├── Email_Invitation_RE.html (html structure for Invitation to user)
-│   │   ├── Offer_Code.html (Offers for User)
-│   │   └── Segmentation_Data_Refresh.html ( Responsive HTML email template that notifies users about outdated segmentation data)
+│   │   ├── Email_Notification_RA.html 
+│   │   ├── Email_Invitation_RE.html 
+│   │   ├── Offer_Code.html 
+│   │   └── Segmentation_Data_Refresh.html 
 │   │
 │   ├── apiVersions.js (version of code)
 │   ├── conf.js (Configures various URLs, email templates, and event mappings for Slack, and WorkOS integration.)
@@ -22,33 +22,33 @@ kalehq-retention-stack-backend/
 │   └── http.js ( Defines server-level middlewares like body parsing, compression, CORS handling, and static file mappings for various UI builds.)
 │
 ├── controllers/
-│   ├── Analytics.js ( Routes for workflow analytics, including fetching, filtering, and exporting data, with request validation using Joi schemas.)
-│   ├── CardElements.js ( Routes to manage card elements, supporting create, update, delete, and fetch operations with Joi validation and logging.)
-│   ├── Cards.js ( Routes for managing cards, including CRUD operations, card duplication, and tree retrieval.)
-│   ├── Challenges.js ( Routes for managing challenges, supporting CRUD operations with optional filtering, projection, and validation using Joi schemas.)
-│   ├── Chargebee.js ( Routes for Chargebee integration, including connecting, fetching, and processing data, with logging and background task handling.)
-│   ├── CustomerData.js ( Routes for customer data management, including CSV upload and customer mapping refresh, with validation and middleware integration.)
-│   ├── Customers.js ( Routes for managing customers, including data retrieval, export, persona assignment, reassignment, and product tier management, with validation.)
-│   ├── Freshdesk.js ( Routes for Freshdesk integration, supporting connection and data fetching with background processing, error handling, and input validation using Joi.)
-│   ├── GlobalConfig.js ( Route for retrieving global configuration data based on the user's industry type, with optional field projection.)
-│   ├── Media.js ( Routes for media management, including file upload, retrieval with filtering and sorting, and duplicating media files, with validation and error handling.)
-│   ├── Notification.js ( Routes for managing notifications, including retrieving, inserting, and updating notifications, with validation for company ID, user email, and notification status.)
-│   ├── OnboardingDetails.js (routes for onboarding details, including retrieving and updating user onboarding data, with validation and error handling.)
-│   ├── Persona.js ( Routes for managing persona configurations, including retrieving categories, industry-wise personas, and updating configurations, with validation and error handling.)
-│   ├── ProductUsageData.js ( Routes for uploading product usage data, refreshing customer mapping, and validating CSV file formats, with error handling and permissions.)
-│   ├── Questionnaire.js ( Routes for managing questionnaires, including retrieving, adding, and updating questionnaire data, with email validation and error handling.)
+│   ├── Analytics.js 
+│   ├── CardElements.js 
+│   ├── Cards.js 
+│   ├── Challenges.js 
+│   ├── Chargebee.js 
+│   ├── CustomerData.js 
+│   ├── Customers.js 
+│   ├── Freshdesk.js 
+│   ├── GlobalConfig.js 
+│   ├── Media.js 
+│   ├── Notification.js 
+│   ├── OnboardingDetails.js 
+│   ├── Persona.js 
+│   ├── ProductUsageData.js 
+│   ├── Questionnaire.js 
 │   ├── Recurly.js ( Ticketing platform integration )
 │   ├── Slack.js ( Slack integration )
 │   ├── Stripe.js ( Payment Integration)
-│   ├── Template.js ( routes for managing templates, including CRUD operations, duplicating templates, and fetching analytics, with validation and error handling.)
-│   ├── TemplateViewer.js ( routes for managing templates and cards, including retrieval, validation, and workflow fetching, with pagination, sorting, and error handling)
-│   ├── UserEvents.js ( routes for managing user events, including retrieving, adding, updating, and adding multiple events, with validation for request body and query parameters.)
-│   ├── UserProfiles.js ( routes for managing retention experts, including adding, deleting, fetching, and updating profiles, with email validation and error handling.)
-│   ├── UserSession.js ( routes for managing user sessions, including starting, retrieving, and ending sessions, with validation and error handling.)
-│   ├── Webhooks.js (webhook routes for handling events from Thrivestack, WorkOS, and Slack, including data validation, service handling, and logging.)
-│   ├── Worker.js ( route for handling callback requests, logging the incoming data, and responding with an acknowledgment.)
-│   ├── WorkflowViewer.js ( API routes and validation schemas for workflows, workflow cards, card elements, and analytics. Key functions include creating, updating, and duplicating workflows and cards.)
-│   ├── WorkOS.js ( routes for interacting with WorkOS, including obtaining tokens, refreshing tokens, and fetching a login URL. It uses Joi for request validation, ensuring proper input for each route.)
+│   ├── Template.js 
+│   ├── TemplateViewer.js 
+│   ├── UserEvents.js 
+│   ├── UserProfiles.js
+│   ├── UserSession.js 
+│   ├── Webhooks.js 
+│   ├── Worker.js 
+│   ├── WorkflowViewer.js 
+│   ├── WorkOS.js 
 │   ├── Zendesk.js ( Ticketing platform integration )
 │   └── .gitkeep
 │
@@ -57,15 +57,15 @@ kalehq-retention-stack-backend/
 │   
 │
 ├── middlewares/ 
-│   ├── CheckContentType.js ( code parses incoming POST request data into JSON if not already set, handling errors gracefully before proceeding)
-│   ├── FileUpload.js ( Max size of the file that can be uploaded)
-│   ├── isKaleAdmin.js ( Validates if User is super admin or not)
-│   ├── isKaleOrRetAdmin.js ( Validates if User is Kale or Retention admin as well)
-│   ├── isLoggedIn.js ( Verifies the user's access token, fetches user data, and appends user info to the request object.)
-│   ├── isProductUploadPermitted.js ( Validates if billing and ticketing data are uploaded; if not, it prevents access with an error message.)
-│   ├── isRetAdmin.js ( Validates if Retention admin or not)
-│   ├── isRetAdminOrRetExp.js ( Validates if Rentention admin or expert )
-│   ├── validateUserEmail.js ( validates the user's email, fetches their company details, and verifies the user exists for further processing.)
+│   ├── CheckContentType.js 
+│   ├── FileUpload.js 
+│   ├── isKaleAdmin.js 
+│   ├── isKaleOrRetAdmin.js 
+│   ├── isLoggedIn.js 
+│   ├── isProductUploadPermitted.js 
+│   ├── isRetAdmin.js 
+│   ├── isRetAdminOrRetExp.js 
+│   ├── validateUserEmail.js 
 │   └── .gitkeep
 │
 ├── models/ ( Schema defination of different entities)
@@ -140,12 +140,12 @@ kalehq-retention-stack-backend/
 |----------------|---------------|
 | [.github](#github)        | Contains configuration files for GitHub workflows, actions, and settings. |
 | [Controllers](#Controllers-Documentation)    | Handle HTTP requests and responses, process input, and call services to return data to the client. |
-| Services       | Contain the core business logic, data processing, and interactions with databases or external APIs. |
-| Models         | Define the structure and schema of the data, often used to interact with the database (e.g., Mongoose models for MongoDB). |
-| Middlewares    | Functions that process requests before reaching the controller, handling tasks like authentication, validation, or logging. |
+| [Services](#Services-Documentation)       | Contain the core business logic, data processing, and interactions with databases or external APIs. |
+| [Models](#Models-Documentation)         | Define the structure and schema of the data, often used to interact with the database (e.g., Mongoose models for MongoDB). |
+| [Middlewares](#Middlewares-Documentation)    | Functions that process requests before reaching the controller, handling tasks like authentication, validation, or logging. |
 | Routes         | Define the URL paths and HTTP methods, linking them to corresponding controller actions. |
-| Utils          | Contain utility functions and helper methods used across the project (e.g., logging, email sending, etc.). |
-| Config         | Store environment variables, settings, or constants used throughout the application for configuration purposes. |
+| [Utils](#Utils-Documentation)          | Contain utility functions and helper methods used across the project (e.g., logging, email sending, etc.). |
+| [Config](#Config-Documentation)         | Store environment variables, settings, or constants used throughout the application for configuration purposes. |
 
 #   .github Folder Structure and Functionality
 
@@ -198,3 +198,112 @@ kalehq-retention-stack-backend/
 | Media.js | - Handles media file operations<br>- Manages file uploads and storage<br>- Controls media access and processing |
 | Webhooks.js | - Manages webhook endpoints<br>- Handles webhook event processing<br>- Controls webhook security and validation |
 | Challenges.js | - Manages system challenges<br>- Handles challenge progression<br>- Controls challenge rewards and completion |
+
+
+
+
+# Services Documentation
+
+| Service | Functionality |
+|---------|--------------|
+| **Integration Services** ||
+| Chargebee.js | - Manages Chargebee subscription billing operations<br>- Handles subscription lifecycle<br>- Processes billing events |
+| Stripe.js | - Processes payments via Stripe gateway<br>- Manages payment methods<br>- Handles transaction operations |
+| Recurly.js | - Manages subscription services through Recurly<br>- Handles billing cycles<br>- Processes subscription events |
+| Zendesk.js | - Integrates with Zendesk support platform<br>- Manages support ticket operations<br>- Syncs customer support data |
+| Freshdesk.js | - Handles Freshdesk support integration<br>- Manages customer support tickets<br>- Processes support communications |
+| Slack.js | - Manages Slack platform integration<br>- Handles message delivery<br>- Processes notification events |
+| WorkOS.js | - Integrates with WorkOS for identity management<br>- Handles access control<br>- Manages authentication services |
+| AzureHelper.js | - Provides Azure services integration<br>- Manages cloud resource operations<br>- Handles Azure-specific functionality |
+| **User Management Services** ||
+| UserProfiles.js | - Manages user profile operations<br>- Handles profile updates<br>- Controls profile data access |
+| UserSession.js | - Handles user session management<br>- Controls authentication flows<br>- Manages session state |
+| UserEvents.js | - Tracks user activity and events<br>- Processes user interactions<br>- Manages event logging |
+| UserEnrichmentData.js | - Processes user enrichment data<br>- Manages personalization features<br>- Handles user analytics |
+| **Customer Management Services** ||
+| CustomerData.js | - Manages customer data operations<br>- Handles customer record updates<br>- Controls data access and security |
+| Customers.js | - Processes customer-related operations<br>- Manages customer relationships<br>- Handles customer data flow |
+| Companies.js | - Manages company data and operations<br>- Handles organizational structure<br>- Controls company relationships |
+| **Card and Template Services** ||
+| Cards.js | - Manages card operations and data<br>- Handles card updates and retrieval<br>- Controls card functionality |
+| CardElements.js | - Manages UI component operations<br>- Handles element rendering<br>- Controls component behavior |
+| Template.js | - Manages template operations<br>- Handles template creation and updates<br>- Controls template versioning |
+| **System Services** ||
+| GlobalConfig.js | - Manages application configuration<br>- Handles system settings<br>- Controls feature toggles |
+| Workflow.js | - Manages workflow operations<br>- Handles process flows<br>- Controls workflow states |
+| Webworker.js | - Manages background processing<br>- Handles async operations<br>- Controls worker tasks |
+| RequestHandler.js | - Processes service requests<br>- Manages request routing<br>- Handles request validation |
+| RequestLock.js | - Provides request locking mechanisms<br>- Manages concurrent access<br>- Controls request synchronization |
+| **Analytics and Monitoring** ||
+| Analytics.js | - Processes analytics data<br>- Generates reports<br>- Manages metrics collection |
+| ProductUsageData.js | - Tracks product usage<br>- Processes usage metrics<br>- Generates usage reports |
+| **Utility Services** ||
+| Utility.js | - Provides common utility functions<br>- Handles shared operations<br>- Manages helper methods |
+| EmailSender.js | - Manages email operations<br>- Handles template processing<br>- Controls email delivery |
+| Media.js | - Manages media operations<br>- Handles file processing<br>- Controls media storage |
+| **Feature Services** ||
+| Notification.js | - Manages notification system<br>- Handles notification delivery<br>- Controls notification preferences |
+| Questionnaire.js | - Manages survey operations<br>- Handles response collection<br>- Controls questionnaire flow |
+| OnboardingDetails.js | - Manages onboarding processes<br>- Handles user progression<br>- Controls onboarding state |
+| Challenges.js | - Manages user challenges<br>- Handles challenge progression<br>- Controls reward systems |
+
+
+# Models Documentation
+
+| Model | Functionality |
+|-------|---------------|
+| **Core Models** ||
+| Cards.js | - Defines schema for cards in the system<br>- Manages card-specific operations<br>- Provides validation for card data |
+| UserProfiles.js | - Handles user profile schema and logic<br>- Manages CRUD operations for user data<br>- Validates user-specific attributes |
+| Notification.js | - Manages schema for notifications<br>- Handles notification data processing<br>- Provides delivery tracking for notifications |
+| PersonaCategory.js | - Defines schema for categorizing personas<br>- Provides structure for persona-related features<br>- Manages hierarchy of persona categories |
+| OnboardingDetails.js | - Handles onboarding-related data schema<br>- Manages onboarding workflows and logic<br>- Ensures data consistency for new users |
+| **Auxiliary Models** ||
+| Media.js | - Manages schema for media files<br>- Handles file metadata and processing<br>- Integrates with storage services |
+| GlobalConfig.js | - Defines schema for application-wide configuration<br>- Manages settings for different environments<br>- Supports dynamic updates to configurations |
+| Challenges.js | - Defines schema for system challenges<br>- Manages gamification and task features<br>- Tracks user progress and completion |
+| RequestLock.js | - Manages schema for locking mechanisms<br>- Prevents concurrent modification of resources<br>- Ensures request integrity |
+| Template.js | - Defines schema for templates<br>- Manages reusable design elements<br>- Supports template creation and updates |
+| PersonaConfig.js | - Handles persona configuration schema<br>- Manages settings for personalization<br>- Supports customization for personas |
+
+
+# Middlewares Documentation
+
+| Middleware | Functionality |
+|------------|---------------|
+| CheckContentType.js | - Verifies the content type of incoming requests<br>- Ensures appropriate data formats are used |
+| FileUpload.js | - Manages file upload operations<br>- Handles validation and storage of uploaded files |
+| isProductUploadPermitted.js | - Checks if a user is authorized to upload products<br>- Enforces permissions for product uploads |
+| isRetAdminOrRetExp.js | - Validates if the user is a retail admin or expert<br>- Restricts access to specific retail functionalities |
+| isKaleAdmin.js | - Confirms if the user has Kale admin privileges<br>- Grants access to administrative features |
+| isRetAdmin.js | - Checks if the user is a retail admin<br>- Restricts non-admins from accessing certain features |
+| isLoggedIn.js | - Validates user login status<br>- Ensures that only authenticated users access certain routes |
+| isKaleOrRetAdmin.js | - Verifies if the user is either Kale admin or retail admin<br>- Provides combined access control for multiple roles |
+| validateUserEmail.js | - Validates the format and existence of user emails<br>- Ensures proper email formatting and uniqueness |
+
+
+
+
+# Utils Documentation
+
+| Utility | Functionality |
+|---------|---------------|
+| index.js | - Acts as the entry point for utility functions<br>- Aggregates and exports various helper methods |
+
+
+
+# Config Documentation
+
+| Configuration | Functionality |
+|---------------|---------------|
+| **Core Configurations** ||
+| constants.js | - Defines constant values used across the application<br>- Ensures reusability and consistency of values |
+| conf.js | - Manages environment-specific configurations<br>- Handles application-wide settings and parameters |
+| apiVersions.js | - Defines supported API versions<br>- Manages version control for APIs in the system |
+| http.js | - Configures HTTP client settings<br>- Manages request timeouts and headers<br>- Handles error management for HTTP calls |
+| **Email Templates** ||
+| Email_Notification_RA.html | - Template for resource availability notifications<br>- Customizable for various notification use cases |
+| Segmentation_Data_Refresh.html | - Template for emails about segmentation data refresh<br>- Used for periodic updates to users |
+| Offer_Code.html | - Template for promotional offer or discount codes<br>- Includes custom branding options |
+| Email_Invitation_RE.html | - Template for email invitations<br>- Used for event or platform invitation communication |
+
