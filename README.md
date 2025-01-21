@@ -206,45 +206,45 @@ kalehq-retention-stack-backend/
 | Service | Functionality |
 |---------|--------------|
 | **Integration Services** ||
-| Chargebee.js | - Manages Chargebee subscription billing operations<br>- Handles subscription lifecycle<br>- Processes billing events |
-| Stripe.js | - Processes payments via Stripe gateway<br>- Manages payment methods<br>- Handles transaction operations |
-| Recurly.js | - Manages subscription services through Recurly<br>- Handles billing cycles<br>- Processes subscription events |
-| Zendesk.js | - Integrates with Zendesk support platform<br>- Manages support ticket operations<br>- Syncs customer support data |
-| Freshdesk.js | - Handles Freshdesk support integration<br>- Manages customer support tickets<br>- Processes support communications |
-| Slack.js | - Manages Slack platform integration<br>- Handles message delivery<br>- Processes notification events |
-| WorkOS.js | - Integrates with WorkOS for identity management<br>- Handles access control<br>- Manages authentication services |
+| [Chargebee.js](/Controllers&Services_docs/Chargebee.md) | - Manages Chargebee subscription billing operations<br>- Handles subscription lifecycle<br>- Processes billing events |
+| [Stripe.js](/Controllers&Services_docs/Stripe.md) | - Processes payments via Stripe gateway<br>- Manages payment methods<br>- Handles transaction operations |
+| [Recurly.js](/Controllers&Services_docs/Recurly.md) | - Manages subscription services through Recurly<br>- Handles billing cycles<br>- Processes subscription events |
+| [Zendesk.js](/Controllers&Services_docs/Zendesk.md) | - Integrates with Zendesk support platform<br>- Manages support ticket operations<br>- Syncs customer support data |
+| [Freshdesk.js](/Controllers&Services_docs/Freshdesk.md) | - Handles Freshdesk support integration<br>- Manages customer support tickets<br>- Processes support communications |
+| [Slack.js](/Controllers&Services_docs/Slack.md) | - Manages Slack platform integration<br>- Handles message delivery<br>- Processes notification events |
+| [WorkOS.js](/Controllers&Services_docs/WorkOS.md) | - Integrates with WorkOS for identity management<br>- Handles access control<br>- Manages authentication services |
 | AzureHelper.js | - Provides Azure services integration<br>- Manages cloud resource operations<br>- Handles Azure-specific functionality |
 | **User Management Services** ||
-| UserProfiles.js | - Manages user profile operations<br>- Handles profile updates<br>- Controls profile data access |
-| UserSession.js | - Handles user session management<br>- Controls authentication flows<br>- Manages session state |
-| UserEvents.js | - Tracks user activity and events<br>- Processes user interactions<br>- Manages event logging |
+| [UserProfiles.js](/Controllers&Services_docs/UserProfiles.md) | - Manages user profile operations<br>- Handles profile updates<br>- Controls profile data access |
+| [UserSession.js](/Controllers&Services_docs/UserSession.md) | - Handles user session management<br>- Controls authentication flows<br>- Manages session state |
+| [UserEvents.js](/Controllers&Services_docs/UserEvents.md) | - Tracks user activity and events<br>- Processes user interactions<br>- Manages event logging |
 | UserEnrichmentData.js | - Processes user enrichment data<br>- Manages personalization features<br>- Handles user analytics |
 | **Customer Management Services** ||
-| CustomerData.js | - Manages customer data operations<br>- Handles customer record updates<br>- Controls data access and security |
-| Customers.js | - Processes customer-related operations<br>- Manages customer relationships<br>- Handles customer data flow |
+| [CustomerData.js](/Controllers&Services_docs/CustomerData.md) | - Manages customer data operations<br>- Handles customer record updates<br>- Controls data access and security |
+| [Customers.js](/Controllers&Services_docs/Customers.md) | - Processes customer-related operations<br>- Manages customer relationships<br>- Handles customer data flow |
 | Companies.js | - Manages company data and operations<br>- Handles organizational structure<br>- Controls company relationships |
 | **Card and Template Services** ||
-| Cards.js | - Manages card operations and data<br>- Handles card updates and retrieval<br>- Controls card functionality |
-| CardElements.js | - Manages UI component operations<br>- Handles element rendering<br>- Controls component behavior |
-| Template.js | - Manages template operations<br>- Handles template creation and updates<br>- Controls template versioning |
+| [Cards.js](/Controllers&Services_docs/Cards.md) | - Manages card operations and data<br>- Handles card updates and retrieval<br>- Controls card functionality |
+| [CardElements.js](/Controllers&Services_docs/CardElements.md) | - Manages UI component operations<br>- Handles element rendering<br>- Controls component behavior |
+| [Template.js](/Controllers&Services_docs/Template.md) | - Manages template operations<br>- Handles template creation and updates<br>- Controls template versioning |
 | **System Services** ||
-| GlobalConfig.js | - Manages application configuration<br>- Handles system settings<br>- Controls feature toggles |
-| Workflow.js | - Manages workflow operations<br>- Handles process flows<br>- Controls workflow states |
+| [GlobalConfig.js](/Controllers&Services_docs/GlobalConfig.md) | - Manages application configuration<br>- Handles system settings<br>- Controls feature toggles |
+| [Workflow.js](/Controllers&Services_docs/Workflow.md) | - Manages workflow operations<br>- Handles process flows<br>- Controls workflow states |
 | Webworker.js | - Manages background processing<br>- Handles async operations<br>- Controls worker tasks |
 | RequestHandler.js | - Processes service requests<br>- Manages request routing<br>- Handles request validation |
 | RequestLock.js | - Provides request locking mechanisms<br>- Manages concurrent access<br>- Controls request synchronization |
 | **Analytics and Monitoring** ||
-| Analytics.js | - Processes analytics data<br>- Generates reports<br>- Manages metrics collection |
-| ProductUsageData.js | - Tracks product usage<br>- Processes usage metrics<br>- Generates usage reports |
+| [Analytics.js](/Controllers&Services_docs/Analytics.md) | - Processes analytics data<br>- Generates reports<br>- Manages metrics collection |
+| [ProductUsageData.js](/Controllers&Services_docs/ProductUsageData.md) | - Tracks product usage<br>- Processes usage metrics<br>- Generates usage reports |
 | **Utility Services** ||
 | Utility.js | - Provides common utility functions<br>- Handles shared operations<br>- Manages helper methods |
 | EmailSender.js | - Manages email operations<br>- Handles template processing<br>- Controls email delivery |
-| Media.js | - Manages media operations<br>- Handles file processing<br>- Controls media storage |
+| [Media.js](/Controllers&Services_docs/Media.md) | - Manages media operations<br>- Handles file processing<br>- Controls media storage |
 | **Feature Services** ||
-| Notification.js | - Manages notification system<br>- Handles notification delivery<br>- Controls notification preferences |
-| Questionnaire.js | - Manages survey operations<br>- Handles response collection<br>- Controls questionnaire flow |
-| OnboardingDetails.js | - Manages onboarding processes<br>- Handles user progression<br>- Controls onboarding state |
-| Challenges.js | - Manages user challenges<br>- Handles challenge progression<br>- Controls reward systems |
+| [Notification.js](/Controllers&Services_docs/Notification.md) | - Manages notification system<br>- Handles notification delivery<br>- Controls notification preferences |
+| [Questionnaire.js](/Controllers&Services_docs/Questionnaire.md) | - Manages survey operations<br>- Handles response collection<br>- Controls questionnaire flow |
+| [OnboardingDetails.js](/Controllers&Services_docs/OnboardingDetails.md) | - Manages onboarding processes<br>- Handles user progression<br>- Controls onboarding state |
+| [Challenges.js](/Controllers&Services_docs/Challenges.md) | - Manages user challenges<br>- Handles challenge progression<br>- Controls reward systems |
 
 
 # Models Documentation
@@ -270,15 +270,15 @@ kalehq-retention-stack-backend/
 
 | Middleware | Functionality |
 |------------|---------------|
-| CheckContentType.js | - Verifies the content type of incoming requests<br>- Ensures appropriate data formats are used |
-| FileUpload.js | - Manages file upload operations<br>- Handles validation and storage of uploaded files |
-| isProductUploadPermitted.js | - Checks if a user is authorized to upload products<br>- Enforces permissions for product uploads |
-| isRetAdminOrRetExp.js | - Validates if the user is a retail admin or expert<br>- Restricts access to specific retail functionalities |
-| isKaleAdmin.js | - Confirms if the user has Kale admin privileges<br>- Grants access to administrative features |
-| isRetAdmin.js | - Checks if the user is a retail admin<br>- Restricts non-admins from accessing certain features |
-| isLoggedIn.js | - Validates user login status<br>- Ensures that only authenticated users access certain routes |
-| isKaleOrRetAdmin.js | - Verifies if the user is either Kale admin or retail admin<br>- Provides combined access control for multiple roles |
-| validateUserEmail.js | - Validates the format and existence of user emails<br>- Ensures proper email formatting and uniqueness |
+| [CheckContentType.js](/middlewares_docs/CheckContentType.md) | - Verifies the content type of incoming requests<br>- Ensures appropriate data formats are used |
+| [FileUpload.js](/middlewares_docs/FileUpload.md) | - Manages file upload operations<br>- Handles validation and storage of uploaded files |
+| [isProductUploadPermitted.js](/middlewares_docs/isProductUploadPermitted.md) | - Checks if a user is authorized to upload products<br>- Enforces permissions for product uploads |
+| [isRetAdminOrRetExp.js](/middlewares_docs/isRetAdminOrRetExp.md) | - Validates if the user is a retail admin or expert<br>- Restricts access to specific retail functionalities |
+| [isKaleAdmin.js](/middlewares_docs/isKaleAdmin.md) | - Confirms if the user has Kale admin privileges<br>- Grants access to administrative features |
+| [isRetAdmin.js](/middlewares_docs/isRetAdmin.md) | - Checks if the user is a retail admin<br>- Restricts non-admins from accessing certain features |
+| [isLoggedIn.js](/middlewares_docs/isLoggedIn.md) | - Validates user login status<br>- Ensures that only authenticated users access certain routes |
+| [isKaleOrRetAdmin.js](/middlewares_docs/isKaleOrRetAdmin.md) | - Verifies if the user is either Kale admin or retail admin<br>- Provides combined access control for multiple roles |
+| [validateUserEmail.js](/middlewares_docs/validateUserEmail.md) | - Validates the format and existence of user emails<br>- Ensures proper email formatting and uniqueness |
 
 
 
@@ -287,7 +287,7 @@ kalehq-retention-stack-backend/
 
 | Utility | Functionality |
 |---------|---------------|
-| index.js | - Acts as the entry point for utility functions<br>- Aggregates and exports various helper methods |
+| [index.js](/utils_docs/index.md) | - Acts as the entry point for utility functions<br>- Aggregates and exports various helper methods |
 
 
 
@@ -296,13 +296,13 @@ kalehq-retention-stack-backend/
 | Configuration | Functionality |
 |---------------|---------------|
 | **Core Configurations** ||
-| constants.js | - Defines constant values used across the application<br>- Ensures reusability and consistency of values |
-| conf.js | - Manages environment-specific configurations<br>- Handles application-wide settings and parameters |
-| apiVersions.js | - Defines supported API versions<br>- Manages version control for APIs in the system |
-| http.js | - Configures HTTP client settings<br>- Manages request timeouts and headers<br>- Handles error management for HTTP calls |
+| [constants.js](/config_docs/constants.js) | - Defines constant values used across the application<br>- Ensures reusability and consistency of values |
+| [conf.js](/config_docs/conf.js) | - Manages environment-specific configurations<br>- Handles application-wide settings and parameters |
+| [apiVersions.js](/config_docs/apiVersions.js) | - Defines supported API versions<br>- Manages version control for APIs in the system |
+| [http.js](/config_docs/http.js) | - Configures HTTP client settings<br>- Manages request timeouts and headers<br>- Handles error management for HTTP calls |
 | **Email Templates** ||
-| Email_Notification_RA.html | - Template for resource availability notifications<br>- Customizable for various notification use cases |
-| Segmentation_Data_Refresh.html | - Template for emails about segmentation data refresh<br>- Used for periodic updates to users |
-| Offer_Code.html | - Template for promotional offer or discount codes<br>- Includes custom branding options |
-| Email_Invitation_RE.html | - Template for email invitations<br>- Used for event or platform invitation communication |
+| [Email_Notification_RA.html](/config_docs/email_templates/Email_Notification_RA.html) | - Template for resource availability notifications<br>- Customizable for various notification use cases |
+| [Segmentation_Data_Refresh.html](/config_docs/email_templates/Segmentation_Data_Refresh.html) | - Template for emails about segmentation data refresh<br>- Used for periodic updates to users |
+| [Offer_Code.html](/config_docs/email_templates/Offer_Code.html) | - Template for promotional offer or discount codes<br>- Includes custom branding options |
+| [Email_Invitation_RE.html](/config_docs/email_templates/Email_Invitation_RE.html) | - Template for email invitations<br>- Used for event or platform invitation communication |
 
